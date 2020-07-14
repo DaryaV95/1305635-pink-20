@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Павицкая](https://up.htmlacademy.ru/adaptive/20/user/1305635).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Воздраганова](https://up.htmlacademy.ru/adaptive/20/user/1227143).
 
 ---
 
