@@ -109,6 +109,42 @@
           </blockquote>
         </div>
       </section>
+
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр фотографий</h2>
+        <div class="filter__wrapper">
+          <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+          <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
+            <input id="filter__input" class="visually-hidden" type="image" alt="Новая фотография">
+            <label class="filter__photo" for="filter__input"></label>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <button class="filter__button filter__button--crop" type="button" aria-label="Кнопка редактироваия фото: обрезка"></button>
+                <div class="filter__range">
+                  <div class="filter__range-line"></div>
+                  <button class="filter__range-circle-button" type="button" aria-label="Ползунок регулировки"></button>
+                </div>
+              </li>
+              <li class="filter__item">
+                <button class="filter__button filter__button--fill" type="button" aria-label="Кнопка редактироваия фото: заливка"></button>
+                <div class="filter__range">
+                  <div class="filter__range-line"></div>
+                  <button class="filter__range-circle-button" type="button" aria-label="Ползунок регулировки"></button>
+                </div>
+              </li>
+              <li class="filter__item">
+                <button class="filter__button filter__button--contrast" type="button" aria-label="Кнопка редактироваия фото: контраст"></button>
+                <div class="filter__range">
+                  <div class="filter__range-line"></div>
+                  <button class="filter__range-circle-button" type="button" aria-label="Ползунок регулировки"></button>
+                </div>
+              </li>
+            </ul>
+            <button class="button filter__button filter__button--posting" type="submit" aria-label="Кнопка добаления поста"></button>
+            <button class="button filter__button filter__button--reset" type="reset" aria-label="Кнопка сброса поста"></button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
