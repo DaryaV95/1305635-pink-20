@@ -2,10 +2,6 @@
 .personal-data__applications {
   margin: 0;
   padding: 0;
-}
-
-.personal-data__achievements,
-.personal-data__applications {
   border: 0;
 }
 
@@ -21,21 +17,20 @@
 }
 
 .personal-data__contact {
-  input[type=tel],
-  input[type=email] {
+  input[type="tel"],
+  input[type="email"] {
     padding: 23px 78px 23px 20px;
 
     border: 2px solid @grey;
     border-radius: 1px;
   }
 
-  input {
-    &::-webkit-input-placeholder {
-      color: @blue-dark;
-    }
-    &::-moz-placeholder {
-      color: @blue-dark;
-    }
+  input::-webkit-input-placeholder {
+    color: @blue-dark;
+  }
+
+  input::-moz-placeholder {
+    color: @blue-dark;
   }
 }
 
@@ -66,20 +61,18 @@
 }
 
 .personal-data__item {
-  input[type=text] {
+  input[type="text"] {
     padding: 23px 78px 23px 20px;
 
     border: 2px solid @grey;
     border-radius: 1px;
   }
 
-  input {
-    &::-webkit-input-placeholder {
-      color: @blue-dark;
-    }
-    &::-moz-placeholder {
-      color: @blue-dark;
-    }
+  input::-webkit-input-placeholder {
+    color: @blue-dark;
+  }
+  input::-moz-placeholder {
+    color: @blue-dark;
   }
 }
 
