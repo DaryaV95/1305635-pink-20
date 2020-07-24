@@ -1,0 +1,54 @@
+.filter {
+  text-align: center;
+  margin-top: 49px;
+
+  .filter__text {
+    line-height: 30px;
+  }
+}
+
+.filter__form {
+  background-color: @grey-light;
+
+  .filter__list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .filter__button {
+    border: 0;
+  }
+}
+
+.filter__button-icon {
+  fill: rgba(40, 54, 69 ,0.3);
+
+  &--current {
+    fill: @purple-red;
+  }
+}
+
+.filter__button-form {
+  padding: 21px 90px 21px 90px;
+  box-sizing: border-box;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+
+  border-radius: 30px;
+
+  &--posting {
+    color: @purple-red;
+
+    border: 3px solid @purple-red;
+  }
+
+  &--reset {
+    color: @blue-dark;
+
+    border: 3px solid @blue-dark;
+    opacity: 0.1;
+  }
+}
