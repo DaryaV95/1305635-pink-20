@@ -1,38 +1,37 @@
+.photo-list {
+  padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 39px;
+  }
+}
+
+.photo-list__user {
+  margin: 0 auto;
+  width: auto;
+  max-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    max-width: 700px;
+  }
+}
+
 .photo-list__wrapper {
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 320px 300px;
-}
-
-.photo-list__title {
-  margin-top: 0;
-  padding-top: 36px;
-  padding-left: 55px;
-  margin-bottom: 84px;
-  width: 172px;
-
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 33px;
-  text-align: center;
-  color: @white;
-}
-
-.photo-list__slogan-wrapper {
-  margin-top: 10px;
-  background-color: @white;
-}
-
-.photo-list__text {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
   width: 280px;
-  padding-top: 54px;
-  padding-bottom: 60px;
 
-  font-weight: normal;
-  font-size: @font-size;
-  line-height: 30px;
-  text-align: center;
-  color: @blue-dark;
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 300px 300px;
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px;
+  }
 }
 
 .photo-list__user-quote {
