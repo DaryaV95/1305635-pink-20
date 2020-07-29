@@ -1,36 +1,111 @@
+.download {
+  padding-top: 10px;
+  width: 280px;
+  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-position: 0 110px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 93px;
+    padding-bottom: 110px;
+    width: 640px;
+    background-image: url("../../img/iphone-hand-tablet@1x.png");
+    background-position: -20px 74px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 108px 10px 86px;
+    width: 940px;
+    background-image: url("../../img/iphone-hand-desktop@1x.png");
+    background-position: 26px 99px;
+  }
+}
+
 .download__wrapper {
-  background-color: @blue-dark;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
 }
 
 .download__title {
-  margin-top: 0;
-  padding-top: 29px;
-
+  padding: 0 20px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
-  color: @white;
   text-align: center;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 31px;
+    font-size: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.download__main-button {
+  margin-top: 348px;
+
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    font-size: 21px;
+  }
 }
 
 .download__list {
-  margin-top: 32px;
-  margin-bottom: 0;
-  margin-right: 58px;
-  margin-left: 58px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-left: 0;
 
   list-style: none;
+
+  margin-top: 38px;
+  margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 67px;
+    margin-bottom: 56px;
+  }
+}
+
+.download__item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.download__link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 45px;
+  height: 45px;
 }
 
 .download__text {
-  margin-top: 31px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-bottom: 38px;
-
-  font-weight: 300;
-  font-size: @font-size;
-  line-height: @line-height;
   text-align: center;
 
-  color: @white;
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    padding-bottom: 0;
+  }
 }
