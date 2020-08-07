@@ -6,34 +6,30 @@
   }
 }
 
-.photo-list__user {
-  margin: 0 auto;
-  width: auto;
-  max-width: 320px;
-
-  @media (min-width: @tablet-width) {
-    width: auto;
-    max-width: 700px;
-  }
-}
-
 .photo-list__wrapper {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 20px;
-  width: 280px;
+}
+
+.photo-list__wrapper-grid {
+  display: grid;
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 300px 300px;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 300px 300px 300px;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 50px;
   }
 }
 
-.photo-list__user-quote {
-  background-color: @grey-light;
+.photo-list__user {
+  &--of-the-day {
+    text-align: center;
+  }
 }

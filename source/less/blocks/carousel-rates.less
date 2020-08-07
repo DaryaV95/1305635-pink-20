@@ -1,52 +1,202 @@
-.carousel-rates__list {
+.carousel-rates {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: @gray-light;
+
+  @media (min-width: @tablet-width) {
+    font-size: 0;
+    padding: 30px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+}
+
+.carousel-rates__table {
+  margin: 0;
+  padding: 0;
   list-style: none;
-  padding-left: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 0;
+  }
+}
+
+.carousel-rates__item {
+  vertical-align: middle;
+  margin: 0 -5px 40px 0;
+
+  text-align: center;
+  line-height: 30px;
+
+  border: 2px solid @gray;
+  border-radius: 1px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24%;
+    margin-right: -2px;
+    font-size: 0;
+  }
+
+  &--hit-sticker {
+    &::before {
+      content: "Хит";
+      position: absolute;
+      top: 11px;
+      left: -28px;
+      transform: rotate(-45deg);
+      width: 100px;
+      height: 30px;
+
+      font-size: @font-size;
+      line-height: 30px;
+      color: @white;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: @purple-red;
+
+      @media (min-width: @tablet-width) {
+        top: 5px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 10px;
+        width: 110px;
+      }
+    }
+  }
 }
 
 .carousel-rates__head {
-  text-align: center;
+  padding: 20px;
   color: @white;
 
   background-color: @blue-dark;
   text-transform: uppercase;
 
-  .carousel-rates__subtitle {
-    margin: 0;
-    padding-top: 19px;
+  @media (min-width: @tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
 
-    font-weight: bold;
+.carousel-rates__subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 30px;
   }
 
-  .carousel-rates__price {
-    margin: 0;
-    margin-top: 15px;
-    padding-bottom: 35px;
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 
-    font-weight: 300;
+.carousel-rates__price {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.carousel-rates__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.carousel-rates__text {
+  position: relative;
+  box-sizing: content-box;
+  padding: 0 20px;
+  min-height: 60px;
+
+  text-align: left;
+  font-size: @font-size;
+  line-height: 60px;
+  color: @blue-dark;
+
+  text-transform: uppercase;
+  border-top: 2px solid @gray;
+  background-image: url("../../img/icon-yes.svg");
+  background-color: @white;
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+  background-size: 31px 21px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+    min-height: 45px;
+
+    font-size: 0;
+    line-height: 45px;
+    background-position-x: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 20px;
+    min-height: 60px;
+    line-height: 60px;
+    font-size: 0;
+  }
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &--not-included {
+    background-image: url("../../img/icon-no.svg");
+    background-size: 27px 27px;
+  }
+}
+
+.carousel-rates__position {
+  min-width: 160px;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 30px;
+  }
+}
+
+.carousel-rates__position-item {
+  font-size: @font-size;
+  text-transform: none;
+  background-image: none;
+
+  @media (min-width: @desktop-width) {
     font-size: 18px;
   }
 }
 
-.carousel-rates__rate {
-  margin: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
-
-  line-height: 30px;
-  text-transform: uppercase;
-  border: 1px solid @grey;
-  border-radius: 1px;
-
-
-  &--included::after {
-    content: "";
-    background-image: url("../../img/icon-yes.svg");
-  }
-
-  &--not-included::after {
-    content: "";
-    background-image: url("../../img/icon-no.svg");
+.carousel-rates__slider-controls {
+  .toggles__button {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
