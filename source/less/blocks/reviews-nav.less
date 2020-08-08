@@ -1,0 +1,61 @@
+.reviews-nav {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.reviews-nav__slider-button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 0;
+  width: 22px;
+  height: 41px;
+
+  border: 0;
+  font-style: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 27px;
+    border-bottom: none;
+    border-left: none;
+    border-top: 2px solid fade(@blue-dark, 30%);
+    border-right: 2px solid fade(@blue-dark, 30%);
+  }
+
+  &:hover::before {
+    border-top-color: fade(@blue-dark, 60%);
+    border-right-color: fade(@blue-dark, 60%);
+  }
+
+  &:active::before {
+    border-top-color: fade(@blue-dark, 10%);
+    border-right-color: fade(@blue-dark, 10%);
+  }
+
+  &--prev::before {
+    left: 130px;
+    transform: translateY(-50%) rotate(225deg);
+  }
+
+  &--next::before {
+    right: 130px;
+    transform: translateY(-50%) rotate(45deg);
+  }
+}
