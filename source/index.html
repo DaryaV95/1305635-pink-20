@@ -11,7 +11,7 @@
       <div class="page-header__nav-wrapper">
         <nav class="main-nav">
           <div class="page-header__wrapper-logo">
-            <a class="page-header__logo" href="#" aria-label="Логотип Pink">
+            <a class="page-header__image page-header__image--mobile" href="#" aria-label="Логотип Pink">
               <svg class="page-header__image page-header__image--mobile" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
                 <g>
                   <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
@@ -25,11 +25,11 @@
           </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link site-list__link--active" href="#">
                 Главная
               </a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a class="site-list__link" href="photo.html">
                 Фотографии
               </a>
@@ -168,57 +168,89 @@
         </div>
       </section>
 
-      <section class="carousel-rates slider container">
-        <h2 class="visually-hidden">Тарифы приложения Pink</h2>
-        <ul class="carousel-rates__table slider__price-wrap">
-          <li class="carousel-rates__item carousel-rates__position">
-            <ul class="carousel-rates__list">
-              <li class="carousel-rates__text carousel-rates__position-item">Розовый фильтр</li>
-              <li class="carousel-rates__text carousel-rates__position-item">Смайлики</li>
-              <li class="carousel-rates__text carousel-rates__position-item">Комментарии</li>
-            </ul>
-          </li>
-          <li class="carousel-rates__item slider__price-item">
-            <header class="carousel-rates__head">
-              <h3 class="carousel-rates__subtitle">База</h3>
-              <p class="carousel-rates__price">1,99 USD</p>
-            </header>
-            <ul class="carousel-rates__list">
-              <li class="carousel-rates__text">Розовый фильтр</li>
-              <li class="carousel-rates__text carousel-rates__text--not-included">Смайлики</li>
-              <li class="carousel-rates__text carousel-rates__text--not-included">Комментарии</li>
-            </ul>
-          </li>
-          <li class="carousel-rates__item price__item--hit-sticker slider__price-item">
-            <header class="carousel-rates__head carousel-rates__head">
-              <h3 class="carousel-rates__subtitle">Стандарт</h3>
-              <p class="carousel-rates__price">3,99 USD</p>
-            </header>
-            <ul class="carousel-rates__list">
-              <li class="carousel-rates__text">Розовый фильтр</li>
-              <li class="carousel-rates__text">Смайлики</li>
-              <li class="carousel-rates__text carousel-rates__text--not-included">Комментарии</li>
-            </ul>
-          </li>
-          <li class="carousel-rates__item slider__price-item">
-            <header class="carousel-rates__head">
-              <h3 class="carousel-rates__subtitle">Анлим</h3>
-              <p class="carousel-rates__price">9,99 USD</p>
-            </header>
-            <ul class="carousel-rates__list">
-              <li class="carousel-rates__text">Розовый фильтр</li>
-              <li class="carousel-rates__text">Смайлики</li>
-              <li class="carousel-rates__text">Комментарии</li>
-            </ul>
-          </li>
-        </ul>
-        <div class="carousel-rates__slider-controls toggles">
-          <button class="toggles__button" type="button" aria-label="Первый отзыв">
-          </button>
-          <button class="toggles__button toggles__button--current" type="button" aria-label="Второй отзыв">
-          </button>
-          <button class="toggles__button" type="button" aria-label="Третий отзыв">
-          </button>
+      <section class="price" id="price">
+        <h2 class="visually-hidden">Стоимость приложения</h2>
+        <div class="price__slider container">
+          <table class="price__table carousel-rates">
+            <tr>
+              <th class="carousel-rates__head">
+              </th>
+              <th class="carousel-rates__head">
+                <span class="carousel-rates__type">База</span>
+                <span class="carousel-rates__price">1,99 USD</span>
+              </th>
+              <th class="carousel-rates__head carousel-rates__head--hit-sticker">
+                <span class="carousel-rates__type">Стандарт</span>
+                <span class="carousel-rates__price">3,99 USD</span>
+              </th>
+              <th class="carousel-rates__head">
+                <span class="carousel-rates__type">Анлим</span>
+                <span class="carousel-rates__price">9,99 USD</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="carousel-rates__square">Розовый фильтр</td>
+              <td class="carousel-rates__square">
+                <div class="carousel-rates__attribute" data-hint="Розовый фильтр">
+                  <span class="carousel-rates__attribute-value carousel-rates__attribute-value--included" aria-label="Да"></span>
+                </div>
+              </td>
+              <td class="carousel-rates__square">
+                <div class="carousel-rates__attribute" data-hint="Розовый фильтр">
+                  <span class="table-price__attribute-value carousel-rates__attribute-value--included" aria-label="Да"></span>
+                </div>
+              </td>
+              <td class="carousel-rates__square">
+                <div class="carousel-rates__attribute" data-hint="Розовый фильтр">
+                  <span class="carousel-rates__attribute-value carousel-rates__attribute-value--included" aria-label="Да"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="carousel-rates__square">Смайлики</td>
+              <td class="carousel-rates__square">
+                <div class="carousel-rates__attribute" data-hint="Смайлики">
+                  <span class="carousel-rates__attribute-value carousel-rates__attribute-value--not-included" aria-label="Нет"></span>
+                </div>
+              </td>
+              <td class="carousel-rates__square">
+                <div class="carousel-rates__attribute" data-hint="Смайлики">
+                  <span class="carousel-rates__attribute-value carousel-rates__attribute-value--included" aria-label="Да"></span>
+                </div>
+              </td>
+              <td class="carousel-rates__square">
+                <div class="carousel-rates__attribute" data-hint="Смайлики">
+                  <span class="carousel-rates__attribute-value carousel-rates__attributee-value--included" aria-label="Да"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="carousel-rates__square">Комментарии</td>
+              <td class="carousel-rates__square">
+                <div class="carousel-rates__attribute" data-hint="Комментарии">
+                  <span class="carousel-rates__attribute-value carousel-rates__attribute-value--not-included" aria-label="Нет"></span>
+                </div>
+              </td>
+              <td class="carousel-rates__square">
+                <div class="carousel-rates__attribute" data-hint="Комментарии">
+                  <span class="carousel-rates__attribute-value carousel-rates__attribute-value--not-included" aria-label="Нет"></span>
+                </div>
+              </td>
+              <td class="carousel-rates__square">
+                <div class="carousel-rates__attribute" data-hint="Комментарии">
+                  <span class="carousel-rates__attribute-value carousel-rates__attribute-value--yes" aria-label="Да"></span>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <div class="carousel-rates__slider-controls toggles">
+            <button class="toggles__button" type="button" aria-label="Первый тариф">
+            </button>
+            <button class="toggles__button toggles__button--current" type="button" aria-label="Второй тариф">
+            </button>
+            <button class="toggles__button" type="button" aria-label="Третий тариф">
+            </button>
+          </div>
         </div>
       </section>
 
@@ -240,7 +272,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="map">
           <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2117689930883!2d30.320772623179398!3d59.938681683716354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1591106760995!5m2!1sru!2sru"  title="Офис компании по адресу Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></iframe>
         </div>
       </section>
@@ -288,7 +320,7 @@
           </li>
         </ul>
         <div class="page-footer__copyright">
-          <b class="page-footer__copyright-text">Разработано</b>
+          <p class="page-footer__copyright-text">Разработано</p>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт Html Academy">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
               <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>

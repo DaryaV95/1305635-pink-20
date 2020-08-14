@@ -1,6 +1,7 @@
 .site-list__item {
-  text-align: center;
+  position: relative;
 
+  text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid @black;
 
@@ -20,9 +21,11 @@
 .site-list__link {
   display: block;
   padding: 15px 20px;
+
   font-size: 18px;
   font-weight: 700;
   color: @white;
+
   text-transform: uppercase;
   text-decoration: none;
 
@@ -32,15 +35,28 @@
     text-transform: none;
   }
 
-  &:not([href])::after {
+  &[href]:hover {
+    color: @purple-red;
+  }
+
+  &[href]:active {
+    color: fade(@purple-red, 30%);
+
     @media (min-width: @desktop-width) {
-      content: "";
-      position: absolute;
-      bottom: -9px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background-color: @white;
+      color: fade(@white, 30%);
     }
+  }
+}
+
+.site-list__link--active::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 30px;
+    left: 0;
+    right: 0;
+    background-color: @white;
   }
 }
