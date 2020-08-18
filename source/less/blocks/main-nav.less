@@ -1,6 +1,4 @@
 .main-nav {
-  margin: 0 auto;
-
   font-family: @body-font;
   font-style: normal;
   font-weight: 700;
@@ -15,8 +13,98 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 940px;
     background-color: transparent;
+  }
+}
+
+.main-nav__wrapper-logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 20px 21px;
+
+  background-color: @blue-dark;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 42px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+  }
+}
+
+.main-nav__image {
+  display: block;
+  width: 74px;
+  height: 23px;
+  color: @white;
+
+  @media (min-width: @tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 147px;
+    height: 40px;
+  }
+
+  &[href]:hover {
+    color: @purple-red;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__logo {
+  display: block;
+  width: 74px;
+  height: 23px;
+  fill: currentColor;
+  pointer-events: none;
+
+  @media (min-width: @tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 147px;
+    height: 40px;
+  }
+
+  &--mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
   }
 }
 
@@ -61,11 +149,21 @@
   &::after {
     content: "";
     position: absolute;
+    display: none;
     top: 50%;
     right: -3px;
     width: 28px;
     height: 4px;
     background-color: currentColor;
+  }
+
+  &:hover,
+  &:active {
+    color: @purple-red;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   &::before {
@@ -74,5 +172,28 @@
 
   &::after {
     transform: translateY(-50%) rotate(-45deg);
+  }
+
+  &--off {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      transform: none;
+      width: 50px;
+      height: 4px;
+      background-color: currentColor;
+      box-shadow: 0 10px 0 0 currentColor, 0 20px 0 0 currentColor;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  &--js {
+    display: block;
   }
 }
