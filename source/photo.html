@@ -9,10 +9,10 @@
   <body class="page__body inner-page">
     <header class="page-header">
       <div class="page-header__nav-wrapper">
-        <nav class="main-nav">
-          <div class="page-header__wrapper-logo">
-            <a class="page-header__image page-header__image--mobile" href="index.html" aria-label="Перейти на главную страницу">
-              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+        <nav class="page-header__main-nav main-nav">
+          <div class="main-nav__wrapper-logo">
+            <a class="main-nav__image page-header__image--mobile" href="index.html" aria-label="Перейти на главную страницу">
+              <svg class="main-nav__logo" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
                 <g>
                   <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
                   <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
@@ -21,7 +21,7 @@
                 </g>
               </svg>
             </a>
-            <button class="main-nav__toggle main-nav__toggle--js" type="button" aria-label="Открыть меню"></button>
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
           </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -58,8 +58,8 @@
       </div>
       <section class="photo-list">
         <div class="photo-list__wrapper">
-          <blockquote class="photo-list__user photo-list__user--of-the-day">
-            <a class="photo-list__link photo-list__link--of-the-day" href="#" data-panorama-text="Панорама дня">
+          <blockquote class="photo-list__user picture picture--of-the-day">
+            <a class="picture__link picture__link--of-the-day" href="#" data-hint="Панорама дня">
               <img class="photo-list__image" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
             </a>
             <article class="photo-list__quote photo-list__quote--of-the-day">
@@ -74,9 +74,9 @@
               </div>
             </article>
           </blockquote>
-          <div class="photo-list__wrapper-grid container">
-            <blockquote class="photo-list__user photo-list__gallery">
-              <a class="photo-list__link" href="#">
+          <div class="photo-list__wrapper-grid">
+            <blockquote class="photo-list__user photo-list__gallery picture">
+              <a class="picture__link" href="#">
                 <img class="photo-list__image" src="img/photo-car-mobile@1x.jpg" alt="Камера направлена на белый автомобиль">
               </a>
               <article class="photo-list__quote">
@@ -91,8 +91,8 @@
                 </div>
               </article>
             </blockquote>
-            <blockquote class="photo-list__user photo-list__gallery">
-              <a class="photo-list__link" href="#">
+            <blockquote class="photo-list__user photo-list__gallery picture">
+              <a class="picture__link" href="#">
                 <img class="photo-list__image" src="img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
               </a>
               <article class="photo-list__quote">
@@ -107,8 +107,8 @@
                 </div>
               </article>
             </blockquote>
-            <blockquote class="photo-list__user photo-list__gallery">
-              <a class="photo-list__link" href="#">
+            <blockquote class="photo-list__user photo-list__gallery picture">
+              <a class="picture__link" href="#">
                 <img class="photo-list__image" src="img/photo-3-tablet.jpg" alt="Вид снизу на современные высотные строения">
               </a>
               <article class="photo-list__quote">
@@ -123,8 +123,8 @@
                 </div>
               </article>
             </blockquote>
-            <blockquote class="photo-list__user photo-list__gallery">
-              <a class="photo-list__link" href="#">
+            <blockquote class="photo-list__user photo-list__gallery picture">
+              <a class="picture__link" href="#">
                 <img class="photo-list__image" src="img/photo-fair-mobile@1x.jpg" alt="Кубанская бахча">
               </a>
               <article class="photo-list__quote">
@@ -139,8 +139,8 @@
                 </div>
               </article>
             </blockquote>
-            <blockquote class="photo-list__user photo-list__gallery">
-              <a class="photo-list__link" href="#">
+            <blockquote class="photo-list__user photo-list__gallery picture">
+              <a class="picture__link" href="#">
                 <img class="photo-list__image" src="img/photo-pov-mobile@1x.jpg" alt="Человек сидит на бесснежной каменной горке">
               </a>
               <article class="photo-list__quote">
@@ -155,8 +155,8 @@
                 </div>
               </article>
             </blockquote>
-            <blockquote class="photo-list__user photo-list__gallery">
-              <a class="photo-list__link " href="#">
+            <blockquote class="photo-list__user photo-list__gallery pictures">
+              <a class="picture__link" href="#">
                 <img class="photo-list__image" src="img/photo-wing-mobile@1x.jpg" alt="Вид на крыло самолёта и закат">
               </a>
               <article class="photo-list__quote">
@@ -176,7 +176,7 @@
       </section>
 
       <section class="filter">
-        <div class="filter__head">
+        <div class="filter__head"> <!--Типа хидер-->
           <h2 class="visually-hidden">Фильтр фотографий</h2>
           <p class="filter__text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
@@ -206,7 +206,7 @@
 
                   <button class="filter-photo__filter-button" type="button" aria-label="Кнопка редактироваия фото: контраст">
                     <svg class="filter-photo__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                      <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                      <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                       <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                     </svg>
                   </button>
@@ -238,7 +238,7 @@
                 <div class="filter-photo__filter">
                   <div class="filter-photo__icon-wrapper">
                     <svg class="filter-photo__icon filter-photo__icon--contrast" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
-                      <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                      <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                       <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                     </svg>
                   </div>
@@ -256,6 +256,7 @@
           </form>
         </div>
       </section>
+
     </main>
 
     <footer class="page-footer">

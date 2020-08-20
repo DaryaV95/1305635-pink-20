@@ -2,7 +2,7 @@
   position: relative;
 
   text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid fade(@white, 15%);
   border-bottom: 1px solid @black;
 
   @media (min-width: @desktop-width) {
@@ -46,17 +46,17 @@
       color: fade(@white, 30%);
     }
   }
-}
 
-.site-list__link--active::after {
-  @media (min-width: @desktop-width) {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    top: 30px;
-    left: 0;
-    right: 0;
-    background-color: @white;
+  &--active::after {
+    @media (min-width: @desktop-width) {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      top: 30px;
+      left: 0;
+      right: 0;
+      background-color: @white;
+    }
   }
 }
