@@ -1,21 +1,9 @@
-.photo-list {
-  padding-top: 15px;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 39px;
-  }
-}
-
 .photo-list__wrapper {
   display: grid;
   grid-template-columns: 1fr;
 
   @media (min-width: @tablet-width) {
     margin-top: 50px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: -54px;
   }
 }
 
@@ -26,7 +14,7 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 300px);
-    row-gap: 20px;
+    margin-top: 50px;
     column-gap: 20px;
     width: 620px;
     align-items: center;
@@ -36,8 +24,6 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     padding: 0;
-
-    row-gap: 50px;
     width: 940px;
   }
 }
@@ -46,7 +32,7 @@
   margin: 0 0 20px 0;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 54px 0;
+    margin: 0 0 20px 0;
   }
 
   &--of-the-day {
@@ -69,6 +55,8 @@
 
 .photo-list__image {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .photo-list__quote {
