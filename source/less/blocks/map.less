@@ -1,11 +1,20 @@
 .map {
   position: relative;
   overflow: hidden;
+  height: 200px;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 396px;
+  }
 
   &::before {
     content: "";
     position: absolute;
-    z-index: 100;
+    z-index: 150;
     left: 0;
     right: 0;
     height: 100px;
@@ -22,5 +31,63 @@
       height: 150px;
       background-size: 101% auto;
     }
+  }
+}
+
+.map__image {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320;
+  z-index: 10;
+
+  @media (min-width: @tablet-width) {
+    top: -30%;
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -10%;
+    width: 1200px;
+  }
+}
+
+.map__marker {
+  position: absolute;
+  z-index: 15;
+  left: 78%;
+  top: 64%;
+  transform: translate(-50%, -45%);
+  width: 35px;
+  height: 35px;
+  background-image: url("../../img/icon-map-marker.svg");
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: 55%;
+    left: 63%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 56%;
+    left: 58%;
+  }
+}
+
+.map__iframe {
+  position: relative;
+  width: 100%;
+  border: none;
+  height: 200px;
+  z-index: 100;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
   }
 }

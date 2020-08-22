@@ -41,36 +41,18 @@
 
 .main-nav__image {
   display: block;
-  width: 74px;
-  height: 23px;
   color: @white;
 
-  @media (min-width: @tablet-width) {
-    width: 145px;
-    height: 40px;
+  &:hover {
+    fill: @purple-red;
   }
 
-  @media (min-width: @desktop-width) {
-    width: 147px;
-    height: 40px;
-  }
-
-  &[href]:hover {
-    color: @purple-red;
-  }
-
-  &[href]:active {
+  &:active {
     opacity: 0.3;
   }
 }
 
 .main-nav__logo {
-  display: block;
-  width: 74px;
-  height: 23px;
-  fill: currentColor;
-  pointer-events: none;
-
   @media (min-width: @tablet-width) {
     width: 145px;
     height: 40px;
@@ -79,32 +61,6 @@
   @media (min-width: @desktop-width) {
     width: 147px;
     height: 40px;
-  }
-
-  &--mobile {
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (min-width: @tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @media (min-width: @desktop-width) {
-      display: block;
-    }
   }
 }
 
