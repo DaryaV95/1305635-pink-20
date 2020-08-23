@@ -4,8 +4,17 @@
 
   background-color: @blue-dark;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-position: 50% 170px;
+  background-position: 50% 256px;
   background-repeat: no-repeat;
+
+  &--photo {
+    background-position: 50% 256px;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../../img/bg-back-mobile@2x.jpg");
+      background-position: 50% 170px;
+    }
+  }
 
   @media (min-resolution: 1.5dppx) {
     background-image: url("../../img/bg-back-mobile@2x.jpg");

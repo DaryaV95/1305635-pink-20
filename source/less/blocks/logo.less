@@ -1,6 +1,7 @@
 .logo {
   margin: 0 auto;
   margin-right: 30px;
+  fill: @white;
 
   @media (min-width: @mobile-width) {
     transform: translate(-49%);
@@ -11,6 +12,22 @@
     display: block;
     width: 145px;
     height: auto;
+  }
+
+  &--photo {
+    transform: translate(0);
+
+    @media (min-width: @desktop-width) {
+      transform: translate(-6%);
+    }
+  }
+
+  &:hover {
+    fill: @purple-red;
+  }
+
+  &:active {
+    fill: fade(@white, 30%);
   }
 }
 
