@@ -2,12 +2,30 @@
   margin: 0 auto;
   margin-right: 30px;
 
+  @media (min-width: @mobile-width) {
+    transform: translate(10%);
+  }
+
+  @media (min-width: @tablet-width) {
+    transform: translate(0);
+  }
+
   &:hover {
     fill: @purple-red;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--form {
+    @media (min-width: @mobile-width) {
+      transform: translate(10%);
+    }
+
+    @media (min-width: @tablet-width) {
+      transform: translate(0);
+    }
   }
 }
 

@@ -70,6 +70,13 @@
   padding-bottom: 36px;
   .list ();
 
+  @media (min-width: @tablet-width) {
+    margin-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 20px;
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
@@ -78,6 +85,16 @@
 
   @media (min-width: @desktop-width) {
     max-width: 600px;
+  }
+
+  &--form {
+    @media (min-width: @tablet-width) {
+      margin-right: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 20px;
+    }
   }
 }
 
