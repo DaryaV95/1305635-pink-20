@@ -23,13 +23,13 @@
 .main-nav__wrapper-logo {
   display: flex;
   justify-content: space-between;
-  padding: 21px 20px 21px;
+  padding: 5px 20px 15px;
 
   background-color: @blue-dark;
 
   @media (min-width: @tablet-width) {
-    padding-top: 42px;
-    padding-bottom: 45px;
+    padding-top: 27px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: @desktop-width) {
@@ -41,26 +41,9 @@
 
 .main-nav__image {
   display: block;
-  color: @white;
 
   &:hover {
     fill: @purple-red;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.main-nav__logo {
-  @media (min-width: @tablet-width) {
-    width: 145px;
-    height: 40px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 147px;
-    height: 40px;
   }
 }
 
@@ -71,6 +54,7 @@
   border-top: 1px solid @black;
 
   @media (min-width: @desktop-width) {
+    transform: translate(2%);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -103,11 +87,15 @@
     content: "";
     position: absolute;
     display: none;
-    top: 50%;
+    top: 10%;
     right: -3px;
     width: 28px;
     height: 4px;
     background-color: currentColor;
+
+    @media (min-width: @tablet-width) {
+      top: 50%;
+    }
   }
 
   &:hover,
