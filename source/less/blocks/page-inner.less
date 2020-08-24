@@ -1,10 +1,20 @@
 .page-inner__slogan-wrapper {
-  padding-top: 45px;
-  padding-bottom: 29px;
+  padding-top: 42px;
+  padding-bottom: 50px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding-top: 92px;
+    padding-top: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 91px 170px 40px;
+  }
+
+  & br {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 

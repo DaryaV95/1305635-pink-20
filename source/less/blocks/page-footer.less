@@ -38,6 +38,7 @@
 
 .page-footer__copyright-text {
   margin-right: 14px;
+  margin-top: 9px;
   line-height: 18px;
 
   @media (min-width: @desktop-width) {
@@ -50,7 +51,7 @@
   display: block;
   fill: @purple-red;
   width: 27px;
-  height: 34px;
+  height: 40px;
 
   &:hover {
     fill: @blue-dark;
@@ -69,6 +70,13 @@
   padding-bottom: 36px;
   .list ();
 
+  @media (min-width: @tablet-width) {
+    margin-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 20px;
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
@@ -77,6 +85,16 @@
 
   @media (min-width: @desktop-width) {
     max-width: 600px;
+  }
+
+  &--form {
+    @media (min-width: @tablet-width) {
+      margin-right: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 20px;
+    }
   }
 }
 

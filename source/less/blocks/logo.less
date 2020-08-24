@@ -1,0 +1,48 @@
+.logo {
+  margin: 0 auto;
+  margin-right: 30px;
+  fill: @white;
+
+  @media (min-width: @mobile-width) {
+    transform: translate(-49%);
+  }
+
+  @media (min-width: @tablet-width) {
+    transform: translate(0);
+    display: block;
+    width: 145px;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: translate(-6%);
+  }
+
+  &:hover {
+    fill: @purple-red;
+  }
+
+  &:active {
+    fill: fade(@white, 30%);
+
+    .logo__stars path {
+      fill: fade(@white, 30%);
+    }
+  }
+}
+
+.logo__glasses {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.logo__stars {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
