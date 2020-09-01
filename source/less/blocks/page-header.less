@@ -2,7 +2,7 @@
   position: relative;
   color: @white;
 
-  background-color: @blue-dark;
+  background-color: #1d2631;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-position: 50% 256px;
   background-repeat: no-repeat;
@@ -82,21 +82,31 @@
 .page-header__title-wrapper {
   padding: 15px 20px 40px;
   min-height: 172px;
-}
 
-@media (min-width: @tablet-width) {
-  .page-header__title-wrapper {
+  @media (min-width: @tablet-width) {
     padding-top: 36px;
     padding-bottom: 46px;
     min-height: 330px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .page-header__title-wrapper {
-    padding-top: 29px;
-    padding-bottom: 67px;
-    min-height: 284px;
+  &--photo {
+    @media (min-width: @desktop-width) {
+      padding-top: 29px;
+      padding-bottom: 57px;
+      min-height: 284px;
+    }
+  }
+
+  &--form {
+    @media (min-width: @mobile-width) {
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 36px;
+      padding-bottom: 46px;
+      min-height: 284px;
+    }
   }
 }
 
@@ -114,6 +124,26 @@
     margin-bottom: 34px;
     font-size: 50px;
     line-height: 60px;
+  }
+
+  &--photo {
+    @media (min-width: @tablet-width) {
+      line-height: 66px;
+    }
+  }
+
+  &--form {
+    @media (min-width: @mobile-width) {
+      line-height: 33px;
+    }
+
+    @media (min-width: @tablet-width) {
+      line-height: 66px;
+    }
+
+    @media (min-width: @desktop-width) {
+      line-height: 60px;
+    }
   }
 }
 

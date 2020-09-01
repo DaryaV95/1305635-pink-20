@@ -2712,35 +2712,35 @@ input[type="file"].visually-hidden {
     max-width: 1200px;
   }
 }
-.photo-list__image {
+.picture__image {
   display: block;
   max-width: 100%;
   height: auto;
 }
 @media (min-width: 660px) {
-  .photo-list__image {
+  .picture__image {
     height: 509px;
   }
 }
-.photo-list__quote {
+.picture__quote {
   box-sizing: border-box;
   padding: 17px 0 21px;
   padding-left: 16px;
   background-color: #f2f2f2;
 }
 @media (min-width: 660px) {
-  .photo-list__quote {
+  .picture__quote {
     padding: 23px 32px 24px 27px;
   }
 }
-.photo-list__quote--of-the-day {
+.picture__quote--of-the-day {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 280px;
 }
 @media (min-width: 660px) {
-  .photo-list__quote--of-the-day {
+  .picture__quote--of-the-day {
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 22px 29px 13px 27px;
@@ -2748,70 +2748,70 @@ input[type="file"].visually-hidden {
   }
 }
 @media (min-width: 960px) {
-  .photo-list__quote--of-the-day {
+  .picture__quote--of-the-day {
     padding: 24px 32px 12px 27px;
     width: 940px;
   }
 }
-.photo-list__author {
+.picture__author {
   margin: 0;
 }
-.photo-list__title {
+.picture__title {
   font-weight: 700;
   font-style: normal;
 }
-.photo-list__date,
-.photo-list__likes {
+.picture__date,
+.picture__likes {
   font-size: 12px;
   text-transform: uppercase;
 }
-.photo-list__date {
+.picture__date {
   margin-left: 5px;
   font-weight: 300;
 }
-.photo-list__text {
+.picture__text {
   margin-top: 0;
   margin-bottom: 9px;
 }
 @media (min-width: 660px) {
-  .photo-list__text {
+  .picture__text {
     margin-bottom: 12px;
     min-height: 48px;
   }
 }
 @media (min-width: 660px) {
-  .photo-list__text--of-the-day {
+  .picture__text--of-the-day {
     order: 2;
     min-height: auto;
   }
 }
-.photo-list__likes-wrapper {
+.picture__likes-wrapper {
   display: flex;
   align-items: center;
   margin-top: auto;
 }
 @media (min-width: 660px) {
-  .photo-list__likes-wrapper {
+  .picture__likes-wrapper {
     flex-direction: row-reverse;
     justify-content: space-between;
   }
 }
 @media (min-width: 660px) {
-  .photo-list__likes-wrapper--of-the-day {
+  .picture__likes-wrapper--of-the-day {
     order: 1;
   }
 }
-.photo-list__likes {
+.picture__likes {
   margin-left: 19px;
   color: #d22856;
 }
 @media (min-width: 660px) {
-  .photo-list__likes {
+  .picture__likes {
     margin-left: 0;
     margin-right: 17px;
   }
 }
-.photo-list__button {
+.picture__button {
   display: block;
   padding: 0;
   width: 13px;
@@ -2985,7 +2985,7 @@ input[type="file"].visually-hidden {
 @media (min-width: 960px) {
   .reviews {
     padding-top: 185px;
-    padding-bottom: 0;
+    padding-bottom: 39px;
     background-image: url("../../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: 50% 73px;

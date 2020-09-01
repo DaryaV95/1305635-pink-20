@@ -13,6 +13,7 @@ const renameitem = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 
 const clean = () => {
   return del("build");
@@ -73,14 +74,23 @@ const createWebp = () => {
 
 exports.webp = createWebp;
 
- const sprite = () => {
+const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
   }
 
-  exports.sprite = sprite;
+exports.sprite = sprite;
+
+//Scripts
+
+const scripts = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
+}
 
 // Html
 
@@ -112,6 +122,7 @@ exports.server = server;
   clean,
   copy,
   styles,
+  scripts,
   images,
   createWebp,
   sprite,
