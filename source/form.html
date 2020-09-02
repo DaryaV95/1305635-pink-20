@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -56,8 +59,8 @@
           </ul>
         </nav>
       </div>
-      <div class="page-header__title-wrapper container">
-        <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="page-header__title-wrapper page-header__title-wrapper--form container">
+        <h1 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </header>
 
@@ -266,5 +269,6 @@
         <button class="button button--bar button--green">OK</button>
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

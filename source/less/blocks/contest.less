@@ -458,37 +458,6 @@
   }
 }
 
-.contest-feedback__label-checkbox {
-  @media (min-width: @desktop-width) {
-    padding-left: 58px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 39px;
-    height: 39px;
-    border: 2px solid @gray;
-    border-radius: 2px;
-    background-color: @white;
-  }
-
-  &::after {
-    content: none;
-    position: absolute;
-    left: 9px;
-    top: 12px;
-    transform: rotate(-45deg);
-    width: 21px;
-    height: 10px;
-    border-left: 2px solid @purple-red;
-    border-bottom: 2px solid @purple-red;
-  }
-}
-
 .contest-feedback__label-radio {
   padding-left: 70px;
 
@@ -549,6 +518,41 @@
 
   &:active::before {
     border-color: @purple-red;
+  }
+}
+
+.contest-feedback__label-checkbox {
+  @media (min-width: @mobile-width) {
+    padding-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 58px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 39px;
+    height: 39px;
+    border: 2px solid @gray;
+    border-radius: 2px;
+    background-color: @white;
+  }
+
+  &::after {
+    content: none;
+    position: absolute;
+    left: 9px;
+    top: 12px;
+    transform: rotate(-45deg);
+    width: 21px;
+    height: 10px;
+    border-left: 2px solid @purple-red;
+    border-bottom: 2px solid @purple-red;
   }
 }
 
